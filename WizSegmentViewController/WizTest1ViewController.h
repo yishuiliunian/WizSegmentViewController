@@ -1,5 +1,5 @@
 //
-//  WizSegViewController.h
+//  WizTest1ViewController.h
 //  WizSegmentViewController
 //
 //  Created by wiz on 12-8-13.
@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WizSegmentedViewController.h"
-@interface WizSegViewController : WizSegmentedViewController
+
+@interface WizTest1ViewController : UIViewController
 
 @end

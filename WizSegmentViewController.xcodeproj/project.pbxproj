@@ -16,6 +16,9 @@
 		73A6CA2D15D8DFD100548CF8 /* WizSegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A6CA2C15D8DFD100548CF8 /* WizSegViewController.m */; };
 		73A6CA3015D8DFD100548CF8 /* WizSegViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73A6CA2E15D8DFD100548CF8 /* WizSegViewController_iPhone.xib */; };
 		73A6CA3315D8DFD100548CF8 /* WizSegViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73A6CA3115D8DFD100548CF8 /* WizSegViewController_iPad.xib */; };
+		73A6CA3B15D8DFE300548CF8 /* WizSegmentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A6CA3A15D8DFE300548CF8 /* WizSegmentedViewController.m */; };
+		73A6CA4015D8E04B00548CF8 /* WizTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A6CA3F15D8E04B00548CF8 /* WizTest1ViewController.m */; };
+		73A6CA4315D8E05800548CF8 /* WizTest2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A6CA4215D8E05700548CF8 /* WizTest2ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,12 @@
 		73A6CA2C15D8DFD100548CF8 /* WizSegViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WizSegViewController.m; sourceTree = "<group>"; };
 		73A6CA2F15D8DFD100548CF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WizSegViewController_iPhone.xib; sourceTree = "<group>"; };
 		73A6CA3215D8DFD100548CF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WizSegViewController_iPad.xib; sourceTree = "<group>"; };
+		73A6CA3915D8DFE300548CF8 /* WizSegmentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizSegmentedViewController.h; sourceTree = "<group>"; };
+		73A6CA3A15D8DFE300548CF8 /* WizSegmentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizSegmentedViewController.m; sourceTree = "<group>"; };
+		73A6CA3E15D8E04B00548CF8 /* WizTest1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizTest1ViewController.h; sourceTree = "<group>"; };
+		73A6CA3F15D8E04B00548CF8 /* WizTest1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizTest1ViewController.m; sourceTree = "<group>"; };
+		73A6CA4115D8E05700548CF8 /* WizTest2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizTest2ViewController.h; sourceTree = "<group>"; };
+		73A6CA4215D8E05700548CF8 /* WizTest2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizTest2ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +88,8 @@
 		73A6CA1F15D8DFD100548CF8 /* WizSegmentViewController */ = {
 			isa = PBXGroup;
 			children = (
-				73A6CA2815D8DFD100548CF8 /* WizSegAppDelegate.h */,
-				73A6CA2915D8DFD100548CF8 /* WizSegAppDelegate.m */,
-				73A6CA2B15D8DFD100548CF8 /* WizSegViewController.h */,
-				73A6CA2C15D8DFD100548CF8 /* WizSegViewController.m */,
-				73A6CA2E15D8DFD100548CF8 /* WizSegViewController_iPhone.xib */,
-				73A6CA3115D8DFD100548CF8 /* WizSegViewController_iPad.xib */,
+				73A6CA3D15D8E01F00548CF8 /* Example */,
+				73A6CA3C15D8DFF700548CF8 /* src */,
 				73A6CA2015D8DFD100548CF8 /* Supporting Files */,
 			);
 			path = WizSegmentViewController;
@@ -99,6 +104,32 @@
 				73A6CA2715D8DFD100548CF8 /* WizSegmentViewController-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		73A6CA3C15D8DFF700548CF8 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				73A6CA3915D8DFE300548CF8 /* WizSegmentedViewController.h */,
+				73A6CA3A15D8DFE300548CF8 /* WizSegmentedViewController.m */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		73A6CA3D15D8E01F00548CF8 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				73A6CA2815D8DFD100548CF8 /* WizSegAppDelegate.h */,
+				73A6CA2915D8DFD100548CF8 /* WizSegAppDelegate.m */,
+				73A6CA2B15D8DFD100548CF8 /* WizSegViewController.h */,
+				73A6CA2C15D8DFD100548CF8 /* WizSegViewController.m */,
+				73A6CA2E15D8DFD100548CF8 /* WizSegViewController_iPhone.xib */,
+				73A6CA3115D8DFD100548CF8 /* WizSegViewController_iPad.xib */,
+				73A6CA3E15D8E04B00548CF8 /* WizTest1ViewController.h */,
+				73A6CA3F15D8E04B00548CF8 /* WizTest1ViewController.m */,
+				73A6CA4115D8E05700548CF8 /* WizTest2ViewController.h */,
+				73A6CA4215D8E05700548CF8 /* WizTest2ViewController.m */,
+			);
+			name = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +200,9 @@
 				73A6CA2615D8DFD100548CF8 /* main.m in Sources */,
 				73A6CA2A15D8DFD100548CF8 /* WizSegAppDelegate.m in Sources */,
 				73A6CA2D15D8DFD100548CF8 /* WizSegViewController.m in Sources */,
+				73A6CA3B15D8DFE300548CF8 /* WizSegmentedViewController.m in Sources */,
+				73A6CA4015D8E04B00548CF8 /* WizTest1ViewController.m in Sources */,
+				73A6CA4315D8E05800548CF8 /* WizTest2ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

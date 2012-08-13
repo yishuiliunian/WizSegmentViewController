@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class WizSegViewController;
+@class WizSegmentedViewController;
 
 @interface WizSegAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) WizSegViewController *viewController;
+@property (strong, nonatomic) WizSegmentedViewController *viewController;
 
 @end

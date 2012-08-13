@@ -8,7 +8,10 @@
 
 #import "WizSegAppDelegate.h"
 
-#import "WizSegViewController.h"
+#import "WizSegmentedViewController.h"
+#import "WizTest1ViewController.h"
+#import "WizTest2ViewController.h"
+
 
 @implementation WizSegAppDelegate
 
@@ -23,12 +26,20 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[[WizSegViewController alloc] initWithNibName:@"WizSegViewController_iPhone" bundle:nil] autorelease];
-    } else {
-        self.viewController = [[[WizSegViewController alloc] initWithNibName:@"WizSegViewController_iPad" bundle:nil] autorelease];
-    }
-    self.window.rootViewController = self.viewController;
+    
+    WizTest1ViewController* test1 = [[WizTest1ViewController alloc] init];
+    WizTest2ViewController* test2 = [[WizTest2ViewController alloc] init];
+    
+    self.viewController = [[[WizSegmentedViewController alloc] initWithViewControllers:@[ test1,test2 ] titles:@[ @"1",@"2" ]] autorelease];
+    
+    [test1 release];
+    [test2 release];
+    
+    UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+    
+    self.window.rootViewController = nav;
+    
+    [nav release];
     [self.window makeKeyAndVisible];
     return YES;
 }
