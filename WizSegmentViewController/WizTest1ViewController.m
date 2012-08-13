@@ -26,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UILabel* label1 = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, 300, 300)];
+    UILabel* label1 = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, 100, 300)];
     label1.text = @"asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf";
     [self.view addSubview:label1];
     [label1 release];
