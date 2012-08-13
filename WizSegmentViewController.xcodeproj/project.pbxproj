@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		73A6CA1A15D8DFD100548CF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A6CA1915D8DFD100548CF8 /* UIKit.framework */; };
+		73A6CA1C15D8DFD100548CF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A6CA1B15D8DFD100548CF8 /* Foundation.framework */; };
+		73A6CA1E15D8DFD100548CF8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A6CA1D15D8DFD100548CF8 /* CoreGraphics.framework */; };
+		73A6CA2415D8DFD100548CF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73A6CA2215D8DFD100548CF8 /* InfoPlist.strings */; };
+		73A6CA2615D8DFD100548CF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A6CA2515D8DFD100548CF8 /* main.m */; };
+		73A6CA2A15D8DFD100548CF8 /* WizSegAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A6CA2915D8DFD100548CF8 /* WizSegAppDelegate.m */; };
+		73A6CA2D15D8DFD100548CF8 /* WizSegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A6CA2C15D8DFD100548CF8 /* WizSegViewController.m */; };
+		73A6CA3015D8DFD100548CF8 /* WizSegViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73A6CA2E15D8DFD100548CF8 /* WizSegViewController_iPhone.xib */; };
+		73A6CA3315D8DFD100548CF8 /* WizSegViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73A6CA3115D8DFD100548CF8 /* WizSegViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		73A6CA1515D8DFD100548CF8 /* WizSegmentViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WizSegmentViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73A6CA1915D8DFD100548CF8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		73A6CA1B15D8DFD100548CF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		73A6CA1D15D8DFD100548CF8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		73A6CA2115D8DFD100548CF8 /* WizSegmentViewController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WizSegmentViewController-Info.plist"; sourceTree = "<group>"; };
+		73A6CA2315D8DFD100548CF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		73A6CA2515D8DFD100548CF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		73A6CA2715D8DFD100548CF8 /* WizSegmentViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WizSegmentViewController-Prefix.pch"; sourceTree = "<group>"; };
+		73A6CA2815D8DFD100548CF8 /* WizSegAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WizSegAppDelegate.h; sourceTree = "<group>"; };
+		73A6CA2915D8DFD100548CF8 /* WizSegAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WizSegAppDelegate.m; sourceTree = "<group>"; };
+		73A6CA2B15D8DFD100548CF8 /* WizSegViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WizSegViewController.h; sourceTree = "<group>"; };
+		73A6CA2C15D8DFD100548CF8 /* WizSegViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WizSegViewController.m; sourceTree = "<group>"; };
+		73A6CA2F15D8DFD100548CF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WizSegViewController_iPhone.xib; sourceTree = "<group>"; };
+		73A6CA3215D8DFD100548CF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WizSegViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		73A6CA1215D8DFD100548CF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73A6CA1A15D8DFD100548CF8 /* UIKit.framework in Frameworks */,
+				73A6CA1C15D8DFD100548CF8 /* Foundation.framework in Frameworks */,
+				73A6CA1E15D8DFD100548CF8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73A6CA0A15D8DFD100548CF8 = {
+			isa = PBXGroup;
+			children = (
+				73A6CA1F15D8DFD100548CF8 /* WizSegmentViewController */,
+				73A6CA1815D8DFD100548CF8 /* Frameworks */,
+				73A6CA1615D8DFD100548CF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		73A6CA1615D8DFD100548CF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73A6CA1515D8DFD100548CF8 /* WizSegmentViewController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73A6CA1815D8DFD100548CF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73A6CA1915D8DFD100548CF8 /* UIKit.framework */,
+				73A6CA1B15D8DFD100548CF8 /* Foundation.framework */,
+				73A6CA1D15D8DFD100548CF8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		73A6CA1F15D8DFD100548CF8 /* WizSegmentViewController */ = {
+			isa = PBXGroup;
+			children = (
+				73A6CA2815D8DFD100548CF8 /* WizSegAppDelegate.h */,
+				73A6CA2915D8DFD100548CF8 /* WizSegAppDelegate.m */,
+				73A6CA2B15D8DFD100548CF8 /* WizSegViewController.h */,
+				73A6CA2C15D8DFD100548CF8 /* WizSegViewController.m */,
+				73A6CA2E15D8DFD100548CF8 /* WizSegViewController_iPhone.xib */,
+				73A6CA3115D8DFD100548CF8 /* WizSegViewController_iPad.xib */,
+				73A6CA2015D8DFD100548CF8 /* Supporting Files */,
+			);
+			path = WizSegmentViewController;
+			sourceTree = "<group>";
+		};
+		73A6CA2015D8DFD100548CF8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				73A6CA2115D8DFD100548CF8 /* WizSegmentViewController-Info.plist */,
+				73A6CA2215D8DFD100548CF8 /* InfoPlist.strings */,
+				73A6CA2515D8DFD100548CF8 /* main.m */,
+				73A6CA2715D8DFD100548CF8 /* WizSegmentViewController-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		73A6CA1415D8DFD100548CF8 /* WizSegmentViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73A6CA3615D8DFD100548CF8 /* Build configuration list for PBXNativeTarget "WizSegmentViewController" */;
+			buildPhases = (
+				73A6CA1115D8DFD100548CF8 /* Sources */,
+				73A6CA1215D8DFD100548CF8 /* Frameworks */,
+				73A6CA1315D8DFD100548CF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WizSegmentViewController;
+			productName = WizSegmentViewController;
+			productReference = 73A6CA1515D8DFD100548CF8 /* WizSegmentViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73A6CA0C15D8DFD100548CF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WizSeg;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = cn.wiz;
+			};
+			buildConfigurationList = 73A6CA0F15D8DFD100548CF8 /* Build configuration list for PBXProject "WizSegmentViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 73A6CA0A15D8DFD100548CF8;
+			productRefGroup = 73A6CA1615D8DFD100548CF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73A6CA1415D8DFD100548CF8 /* WizSegmentViewController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73A6CA1315D8DFD100548CF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73A6CA2415D8DFD100548CF8 /* InfoPlist.strings in Resources */,
+				73A6CA3015D8DFD100548CF8 /* WizSegViewController_iPhone.xib in Resources */,
+				73A6CA3315D8DFD100548CF8 /* WizSegViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73A6CA1115D8DFD100548CF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73A6CA2615D8DFD100548CF8 /* main.m in Sources */,
+				73A6CA2A15D8DFD100548CF8 /* WizSegAppDelegate.m in Sources */,
+				73A6CA2D15D8DFD100548CF8 /* WizSegViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		73A6CA2215D8DFD100548CF8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73A6CA2315D8DFD100548CF8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		73A6CA2E15D8DFD100548CF8 /* WizSegViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73A6CA2F15D8DFD100548CF8 /* en */,
+			);
+			name = WizSegViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		73A6CA3115D8DFD100548CF8 /* WizSegViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73A6CA3215D8DFD100548CF8 /* en */,
+			);
+			name = WizSegViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		73A6CA3415D8DFD100548CF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		73A6CA3515D8DFD100548CF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		73A6CA3715D8DFD100548CF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WizSegmentViewController/WizSegmentViewController-Prefix.pch";
+				INFOPLIST_FILE = "WizSegmentViewController/WizSegmentViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		73A6CA3815D8DFD100548CF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WizSegmentViewController/WizSegmentViewController-Prefix.pch";
+				INFOPLIST_FILE = "WizSegmentViewController/WizSegmentViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73A6CA0F15D8DFD100548CF8 /* Build configuration list for PBXProject "WizSegmentViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73A6CA3415D8DFD100548CF8 /* Debug */,
+				73A6CA3515D8DFD100548CF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73A6CA3615D8DFD100548CF8 /* Build configuration list for PBXNativeTarget "WizSegmentViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73A6CA3715D8DFD100548CF8 /* Debug */,
+				73A6CA3815D8DFD100548CF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 73A6CA0C15D8DFD100548CF8 /* Project object */;
+}
