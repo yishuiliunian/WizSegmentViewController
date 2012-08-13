@@ -37,11 +37,15 @@
 
     
     if (selectedItemIndex != selectedViewControllerIndex) {
-        [self transitionFromViewController:selectedViewController toViewController:toViewController duration:0.0 options:UIViewAnimationCurveEaseInOut animations:^{
-            
-        } completion:^(BOOL finished) {
-            
-        }];
+        [selectedViewController viewWillDisappear:YES];
+        [selectedViewController viewDidDisappear:YES];
+        
+        [toViewController viewWillAppear:YES];
+        self.view = toViewController.view;
+        [toViewController viewDidAppear:YES];
+
+        
+        selectedViewControllerIndex = selectedItemIndex;
     }
 }
 
@@ -69,10 +73,16 @@
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    
     self.navigationItem.titleView = segementdControl;
+    [segementdControl setSelectedSegmentIndex:0];
+    
+    self.view.backgroundColor = [UIColor redColor];
 	// Do any additional setup after loading the view.
 }
 
@@ -84,7 +94,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return YES;
 }
 
 @end
