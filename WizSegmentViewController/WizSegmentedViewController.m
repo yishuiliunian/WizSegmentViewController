@@ -71,10 +71,17 @@
         [[UIDevice currentDevice] performSelector:@selector(setOrientation:) withObject:(id)toInterfaceOrientation];
     }
     //
+//    [UIView beginAnimations:@"Curl"context:nil];//动画开始
+//    [UIView setAnimationDuration:0.75];
+//    [UIView setAnimationDelegate:self];
+//    [UIView setAnimationTransition:UIViewAnimationTransitionNone forView:toViewController.view cache:YES];
+//    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+//    [UIView commitAnimations];
+    //
     self.view = toViewController.view;
+
     [toViewController viewDidAppear:YES];
 }
-
 
 - (void) willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
