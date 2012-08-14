@@ -13,6 +13,7 @@
 #import "WizTest2ViewController.h"
 
 
+
 @implementation WizSegAppDelegate
 
 - (void)dealloc
@@ -41,6 +42,7 @@
     
     [nav release];
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

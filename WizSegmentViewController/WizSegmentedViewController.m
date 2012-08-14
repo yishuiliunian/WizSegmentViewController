@@ -44,6 +44,7 @@
     self.selectedViewController = toViewController;
     [toViewController viewWillAppear:YES];
     //
+    
     UIInterfaceOrientation fromInterfaceOrientation = toViewController.interfaceOrientation;
     UIInterfaceOrientation toInterfaceOrientation = [[UIDevice currentDevice] orientation];
     
@@ -68,13 +69,10 @@
             }
         }
         [[UIDevice currentDevice] performSelector:@selector(setOrientation:) withObject:(id)toInterfaceOrientation];
-       
     }
     //
     self.view = toViewController.view;
     [toViewController viewDidAppear:YES];
-
-        NSLog(@"self interface orientation is %d",self.interfaceOrientation);
 }
 
 
@@ -146,4 +144,27 @@
     return [self.selectedViewController shouldAutorotateToInterfaceOrientation:interfaceOrientation];
 }
 
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.selectedViewController viewWillAppear:animated];
+}
+
+- (void) viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self.selectedViewController viewDidAppear:animated];
+}
+
+- (void) viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.selectedViewController viewWillDisappear:animated];
+}
+
+- (void) viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [self.selectedViewController viewDidDisappear:animated];
+}
 @end
